@@ -2,14 +2,6 @@
 {
     public static class SortInt
     {
-        //поменять местами значения двух переменных
-        private static void Swap(ref int a1, ref int a2)
-        {
-            int a = a1;
-            a1 = a2;
-            a2 = a;
-        }
-
         //сортировка пузырьком. Время O(n2) - O(n), память O(1)
         public static int[] SortingArrayBubble(this int[] array)
         {
@@ -136,6 +128,14 @@
                 array[j] = a;
             }
             return array;
+        }
+
+        //поменять местами значения двух переменных
+        private static void Swap(ref int a1, ref int a2)
+        {
+            int a = a1;
+            a1 = a2;
+            a2 = a;
         }
     }
 }
