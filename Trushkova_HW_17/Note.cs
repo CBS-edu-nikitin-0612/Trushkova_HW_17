@@ -29,43 +29,43 @@
 
         public static Note NoteDo(int oktava, int length)
         {
-            int frequency = ((int)NoteFrequency.DO) * oktava;
+            int frequency = ((int)NoteFrequency.DO) * Math.Pow(2, oktava - 1);
             return new Note(frequency, length, false);
         }
 
         public static Note NoteRe(int oktava, int length)
         {
-            int frequency = ((int)NoteFrequency.RE) * oktava;
+            int frequency = ((int)NoteFrequency.RE) * Math.Pow(2, oktava - 1);
             return new Note(frequency, length, false);
         }
 
         public static Note NoteMi(int oktava, int length)
         {
-            int frequency = ((int)NoteFrequency.MI) * oktava;
+            int frequency = ((int)NoteFrequency.MI) * Math.Pow(2, oktava - 1);
             return new Note(frequency, length, false);
         }
 
         public static Note NoteFa(int oktava, int length)
         {
-            int frequency = ((int)NoteFrequency.FA) * oktava;
+            int frequency = ((int)NoteFrequency.FA) * Math.Pow(2, oktava - 1);
             return new Note(frequency, length, false);
         }
 
         public static Note NoteSol(int oktava, int length)
         {
-            int frequency = ((int)NoteFrequency.SOL) * oktava;
+            int frequency = ((int)NoteFrequency.SOL) * Math.Pow(2, oktava - 1);
             return new Note(frequency, length, false);
         }
 
         public static Note NoteLya(int oktava, int length)
         {
-            int frequency = ((int)NoteFrequency.LYA) * oktava;
+            int frequency = ((int)NoteFrequency.LYA) * Math.Pow(2, oktava - 1);
             return new Note(frequency, length, false);
         }
 
         public static Note NoteSi(int oktava, int length)
         {
-            int frequency = ((int)NoteFrequency.SI) * oktava;
+            int frequency = ((int)NoteFrequency.SI) * Math.Pow(2, oktava - 1);
             return new Note(frequency, length, false);
         }
         #endregion
