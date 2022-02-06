@@ -1,5 +1,6 @@
 ﻿namespace Task2
 {
+    //Список частот для разных нот
     enum NoteFrequency : int
     {
         DO = 262,

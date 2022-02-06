@@ -9,9 +9,11 @@ for (int i = 0; i < array.Length; i++)
     Random random = new Random();
     array[i] = random.Next(0, 100);
 }
-
+//Вывод на экран исходного массива
 Console.WriteLine("Initial array:");
 Console.WriteLine(string.Join(" ", array));
+
+//Вывод на экран отсортированного массива. Использовалось 4 вида сортировки Burbble, Shaker, Comb и Insert. Расчет для каждой длительности выполнения
 Console.WriteLine("Sorted array");
 DateTime dateTimeNow1 = DateTime.Now;
 Console.WriteLine("Burbble " + string.Join(" ", array.SortingArrayBubble()));
@@ -26,6 +28,7 @@ DateTime dateTimeNow4 = DateTime.Now;
 Console.WriteLine("Insert  " + string.Join(" ", array.SortingArrayInsert()));
 TimeSpan timeSpan4 = DateTime.Now - dateTimeNow1;
 
+//Вывод на экран длительности выполнения каждой сортировки
 Console.WriteLine($"\nВремя для Burbble {timeSpan1.TotalMilliseconds}");
 Console.WriteLine($"Время для Shaker {timeSpan2.TotalMilliseconds}");
 Console.WriteLine($"Время для Comb {timeSpan3.TotalMilliseconds}");

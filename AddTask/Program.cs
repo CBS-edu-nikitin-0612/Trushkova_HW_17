@@ -6,6 +6,7 @@ Console.WriteLine("Hello, Teacher!");
 int a = 12;
 int b = 3;
 
+//Расчет и вывод на экран суммы, разницы, произведения, деления и остатка от деления ддвух чисел
 Console.WriteLine($"Сумма {a} и {b} равна {Calculator.Add(a,b)}");
 Console.WriteLine($"Разница {a} и {b} равна {Calculator.Min(a, b)}");
 Console.WriteLine($"Произведение {a} и {b} равно {Calculator.Multi(a, b)}");

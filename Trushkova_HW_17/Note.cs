@@ -21,6 +21,7 @@
         public int Length => _length; 
         public bool IsPause => _isPause;
 
+        #region Фабричные методы для создания нот до, ре, ми, фа, соль, ля, си и паузы
         public static Note Pause(int frequency, int length, bool isPause)
         {
             return new Note(frequency, length, isPause);
@@ -67,5 +68,6 @@
             int frequency = ((int)NoteFrequency.SI) * oktava;
             return new Note(frequency, length, false);
         }
+        #endregion
     }
 }

@@ -4,6 +4,7 @@
     {
         private Note[] gamma;
 
+        //Создание гаммы нот
         public NoteGamma(int length, int oktava)
         {           
             gamma = new Note[7] {

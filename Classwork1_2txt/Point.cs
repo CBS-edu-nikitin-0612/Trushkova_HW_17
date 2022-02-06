@@ -17,6 +17,7 @@
 
         public int Y => _y;        
 
+        //Расстояние между двумя точками
         public static double LengthPoints(Point point1, Point point2)
           => Math.Sqrt((point1.X - point2.X) * (point1.X - point2.X) + 
               (point1.Y - point2.Y) * (point1.Y - point2.Y));
