@@ -89,47 +89,6 @@
             return array;
         }
 
-        //Сортировка Шелла / Shellsort
-
-        //сортировка выбором. Время O(n2) - O(n2), память O(1)
-
-        //сортировка быстрая. Время O(n2) - O(n), память O(n)
-
-        //сортировка слиянием. Время O(nlogn) - O(nlogn), память O(n)
-
-        //Гномья сортировка / Gnome sort
-
-        //Сортировка деревом / Tree sort
-
-        //Сортировка подсчетом / Counting sort
-
-        //Блочная сортировка / Bucket sort
-
-        //Поразрядная сортировка / Radix sort
-        //LSD (least significant digit):
-        //MSD (most significant digit):
-
-        //Битонная сортировка / Bitonic sort:
-
-        //Timsort
-
-        //пирамидальная сортировка (двоичная куча). Время O(nlogn) - O(nlogn), память O(n)
-        public static int[] SortingArrayBynaryHeap(this int[] array)
-        {
-            for (int i = 1; i < array.Length; i++)
-            {
-                int a = array[i];
-                int j = i;
-                while (j > 0 && array[j - 1] > a)
-                {
-                    array[j] = array[j - 1];
-                    --j;
-                }
-                array[j] = a;
-            }
-            return array;
-        }
-
         //поменять местами значения двух переменных
         private static void Swap(ref int a1, ref int a2)
         {
